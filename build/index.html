@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ru-RU">
+  <head>
+    <title>Title</title>
+    <link rel="stylesheet" href="./css/style.css">
+  </head>
+  <body>
+    <main class="main">
+      <div class="main__left">
+        <div class="sidebar"><a class="sidebar__logo" href="#">CRM</a>
+          <ul class="sidebar__list">
+            <li class="sidebar__list-item"><a href="#">Dashboard</a></li>
+            <li class="sidebar__list-item"><a href="#">Reports</a></li>
+            <li class="sidebar__list-item active"><a href="#">Customers</a></li>
+            <li class="sidebar__list-item"><a href="#">Calendar</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="main__right">
+        <div class="content">
+          <div class="content__head">
+            <ul class="content__breadcrumb">
+              <li><a href="#">Customers</a></li>
+              <li>Max Jones</li>
+            </ul>
+            <form class="content__search" action="/">
+              <input type="search" placeholder="search">
+              <button type="submit"></button>
+            </form><a class="content__income" href="#"><span>4</span></a><a class="content__account" href="#">
+              <div class="content__account-pic"><img src="./img/avatar.jpg" alt=""></div>
+              <p class="content__account-name">Hello Lauren</p></a>
+          </div>
+          <div class="content__main">
+            <div class="tabs-content">
+              <div class="tabs-content__item customer active" id="overview">
+                <div class="customer__pic"><img src="./img/customer.jpg" alt=""></div>
+                <div class="customer__info">
+                  <div class="customer__info-head">
+                    <p class="customer__name">Max Jones</p><span class="customer__status">gold</span>
+                    <p class="customer__type">Sales & Marketing</p>
+                  </div>
+                  <div class="customer__info-bottom">
+                    <div class="customer__tel"><span>phone</span><a href="tel:+31140175468">(+31) 140 175 468</a></div>
+                    <div class="customer__address"><span>address</span>
+                      <p>Binnenweg 50, Rotterdam</p>
+                    </div>
+                    <button class="btn">Create quote</button>
+                  </div>
+                </div>
+              </div>
+              <div class="tabs-content__item customer" id="orders"></div>
+              <div class="tabs-content__item customer" id="payments"></div>
+            </div>
+            <ul class="tabs-head">
+              <li class="tabs-head__item active"><a href="#overview">Overview</a></li>
+              <li class="tabs-head__item"><a href="#orders">Orders</a></li>
+              <li class="tabs-head__item"><a href="#payments">Payments</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+  <script src="./js/libs.min.js"></script>
+  <script src="./js/main.js"></script>
+</html>

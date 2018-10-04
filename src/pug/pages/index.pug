@@ -1,0 +1,64 @@
+doctype html
+html(lang="ru-RU")
+	head
+		title Title
+		link(rel="stylesheet", href="./css/style.css")
+	body
+		main.main
+			.main__left
+				.sidebar
+					a(href="#").sidebar__logo CRM
+					ul.sidebar__list
+						li.sidebar__list-item
+							a(href="#") Dashboard
+						li.sidebar__list-item
+							a(href="#") Reports
+						li.sidebar__list-item.active
+							a(href="#") Customers
+						li.sidebar__list-item
+							a(href="#") Calendar
+			.main__right
+				.content
+					.content__head
+						ul.content__breadcrumb
+							li
+								a(href="#") Customers
+							li Max Jones
+						form(action="/").content__search
+							input(type="search", placeholder="search")
+							button(type="submit")
+						a(href="#").content__income
+							span 4
+						a(href="#").content__account
+							.content__account-pic
+								img(src="./img/avatar.jpg", alt="")
+							p.content__account-name Hello Lauren
+					.content__main
+						.tabs-content
+							.tabs-content__item.customer.active#overview
+								.customer__pic
+									img(src="./img/customer.jpg", alt="")
+								.customer__info
+									.customer__info-head
+										p.customer__name Max Jones
+										span.customer__status gold
+										p.customer__type Sales & Marketing
+									.customer__info-bottom
+										.customer__tel
+											span phone
+											a(href="tel:+31140175468") (+31) 140 175 468
+										.customer__address
+											span address
+											p Binnenweg 50, Rotterdam
+										button.btn Create quote
+							.tabs-content__item.customer#orders
+							.tabs-content__item.customer#payments
+						ul.tabs-head
+							li.tabs-head__item.active
+								a(href="#overview") Overview
+							li.tabs-head__item
+								a(href="#orders") Orders
+							li.tabs-head__item
+								a(href="#payments") Payments
+	script(src="./js/libs.min.js")
+	script(src="./js/main.js")

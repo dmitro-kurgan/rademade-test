@@ -1,0 +1,40 @@
+// VARIABLES
+//FONTS
+$font: 'Open Sans', Arial, sans-serif;
+$font2: 'Myriad Pro', Arial, sans-serif;
+
+//COLORS
+$balticSea: #303841;
+$saffron: #ffc12d;
+$blueGem: #442a9d;
+$grey: #4f4f4f;
+$pink: #f14e95;
+
+//DEVICE WIDTH
+$desctop-md: "screen and (max-width: 1280px)";
+
+//MIXINS
+//PSEUDO
+@mixin pseudo($display: block, $pos: absolute, $content: '') {
+    content: $content;
+    display: $display;
+    position: $pos;
+}
+
+//FONTS PROPERTIES
+@mixin font-props ($colour: false, $size: false, $weight: false, $ls: false, $lh: false) {
+	@if $colour { color: $colour; }
+    @if $size { font-size: $size; }
+    @if $weight { font-weight: $weight; }
+    @if $ls { letter-spacing: $ls; }
+    @if $lh { line-height: $lh; }
+}
+
+//PLACEHOLDER
+@mixin input-placeholder {
+    &.placeholder { @content; }
+    &:-moz-placeholder { @content; }
+    &::-moz-placeholder { @content; }
+    &:-ms-input-placeholder { @content; }
+    &::-webkit-input-placeholder { @content; }
+}
