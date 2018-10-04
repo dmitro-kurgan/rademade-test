@@ -1,3 +1,3 @@
 # rademade-test
-npm install --save-dev;
-gulp - запустить проект;
+1. npm install --save-dev;
+2. gulp - запустить проект;
